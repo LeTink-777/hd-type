@@ -63,7 +63,7 @@ function ResultInner() {
     setSelected(plan);
     setPending(true);
     setError(null);
-    const failure = await startCheckout(plan, trimmed);
+    const failure = await startCheckout(plan, trimmed, { type: typeId });
     if (failure) {
       setError(failure);
       setPending(false);
