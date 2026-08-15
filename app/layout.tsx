@@ -56,11 +56,13 @@ export const metadata: Metadata = {
     title: "Твой тип Human Design — 3 вопроса и результат",
     description:
       "Узнай свой тип Human Design за 3 вопроса бесплатно. Генератор, Проектор, Манифестор или Рефлектор — стратегия и авторитет мгновенно.",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Твой тип Human Design — 3 вопроса и результат",
     description: "Узнай свой тип Human Design за 3 вопроса бесплатно.",
+    images: ["/og-image.png"],
   },
   robots: { index: true, follow: true },
 };
@@ -91,7 +93,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <p style={{ margin: 0 }}>
             Евдокимов Даниил Владимирович · ИНН 381928138362 · Самозанятый
           </p>
-          <p style={{ margin: "4px 0 0" }}>danyavdkmvv3@gmail.com · Telegram @dvdkmv</p>
+          <p style={{ margin: "4px 0 0" }}><a href="mailto:danyavdkmvv3@gmail.com">danyavdkmvv3@gmail.com</a> · Telegram <a href="https://t.me/dvdkmv" target="_blank" rel="noopener noreferrer">@dvdkmv</a></p>
           <p style={{ margin: "10px 0 0", opacity: 0.6 }}>
             Материалы носят развлекательный характер. 18+
           </p>
